@@ -1,0 +1,23 @@
+sudo dmesg -C
+sudo insmod simple.ko
+dmesg
+sudo rmmod simple
+dmesg
+
+sudo insmod hello.ko
+dmesg
+cat /proc/hello
+sudo rmmod hello
+dmesg
+
+sudo insmod jiffies.ko
+dmesg
+cat /proc/jiffies
+sudo rmmod jiffies
+dmesg
+
+sudo insmod seconds.ko
+dmesg
+cat /proc/seconds
+sudo rmmod seconds
+dmesg
